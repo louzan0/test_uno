@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>NadjibM.com</title>
+    <title>nadjibm.com</title>
     <!--===== render all elements normally =====-->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/normalise.css') }}"/>
     <!--===== font awesome library =====-->
@@ -21,11 +21,11 @@
     <header>
         <div class="container">
             <nav>
-                <a href="index.html"><p>Nadjib <span>M</span></p></a>
+                <a href="{{ url for('index') }}"><p>Nadjib <span>M</span></p></a>
                 <div class="links" id="navLinks">
                     <i class="fas fa-times" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="{{ url for('index') }}">HOME</a></li>
                         <li><a href="about.html">ABOUT</a></li>
                         <li><a href="skills.html">SKILLS</a></li>
                         <li><a href="projects.html">PROJECTS</a></li>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>NadjibM.com</title>
+    <title>nadjibm.com</title>
     <!--===== render all elements normally =====-->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/normalise.css') }}"/>
     <!--===== font awesome library =====-->
@@ -16,12 +16,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
 </head>
+
 <body>
-    <!--===== start header =====-->
-    <header>
+    <!-- start header -->
+    <header class="sub-header">
         <div class="container">
             <nav>
-                <a href="index.html"><p>Nadjib <span>M</span></p></a>
+                <a href="{{ url_for('index') }}"><p>Nadjib <span>M</span></p></a>
                 <div class="links" id="navLinks">
                     <i class="fas fa-times" onclick="hideMenu()"></i>
                     <ul>
@@ -30,41 +31,6 @@
                         <li><a href="{{ url_for('skills') }}">SKILLS</a></li>
                         <li><a href="{{ url_for('projects') }}">PROJECTS</a></li>
                         <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
-                    </ul>
-                </div>
-                <i class="fas fa-bars" onclick="showMenu()"></i>
-            </nav><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>NadjibM.com</title>
-    <!--===== render all elements normally =====-->
-    <link rel="stylesheet" href="css/normalise.css"/>
-    <!--===== font awesome library =====-->
-    <link rel="stylesheet" href="css/all.min.css"/>
-    <!--===== main template css file =====-->
-    <link rel="stylesheet" href="css/main.css"/>
-    <!--===== google font =====-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
-</head>
-<body>
-    <!-- start header -->
-    <header class="sub-header">
-        <div class="container">
-            <nav>
-                <a href="index.html"><p>Nadjib <span>M</span></p></a>
-                <div class="links" id="navLinks">
-                    <i class="fas fa-times" onclick="hideMenu()"></i>
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="skills.html">SKILLS</a></li>
-                        <li><a href="projects.html">PROJECTS</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </div>
                 <i class="fas fa-bars" onclick="showMenu()"></i>
@@ -85,7 +51,7 @@
                 <div class="projects-col">
                     <a href="https://nadjib-coder.github.io/front-end-mentor-challenge-11/">
                     <div class="img">
-                        <img src="images/project1.png" alt="London"/>
+                        <img src="../static/images/project1.png" alt="London"/>
                     </div>
                     <div class="layer">
                         <h3>Clipboard<br>Click here!</h3>
@@ -96,7 +62,7 @@
                     <a href="https://nadjib-coder.github.io/front-end-mentor-challenge-12/">
                     <div class="img">
                         
-                            <img src="images/project 2.png" alt="newyork"/>
+                            <img src="../static/images/project 2.png" alt="newyork"/>
                         
                     </div>
                     <div class="layer">
@@ -107,7 +73,7 @@
                 <div class="projects-col">
                     <a href="https://nadjib-coder.github.io/front-end-mentor-challenge-13/">
                         <div class="img">
-                                <img src="images/project3.png" alt="washington"/>
+                                <img src="../static/images/project3.png" alt="washington"/>
                         </div>
                         <div class="layer">
                             <h3 class="h3">Flyo<br>Click here !</h3>
@@ -126,7 +92,7 @@
             <div class="content">
                 <h1>You have a new project</h1>
                 <p>Contact me now and get a 30% discount on your new project</p>
-                <a href="contact.html" class="btn">CONTACT US</a>
+                <a href="{{ur for('contact') }}" class="btn">CONTACT US</a>
             </div>
         </div>
     </section>
@@ -145,7 +111,7 @@
                     <input class="btn" type="submit" name="submit" value="POST COMMENT">
                 </form>
             </section>
-        </div>
+        </div>  
     </section>
     <!--end blog content-->
 

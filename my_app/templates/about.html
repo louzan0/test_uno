@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>NadjibM.com</title>
+    <title>nadjibm.com</title>
     <!--===== render all elements normally =====-->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/normalise.css') }}"/>
     <!--===== font awesome library =====-->
@@ -21,7 +21,7 @@
     <header>
         <div class="container">
             <nav>
-                <a href="index.html"><p>Nadjib <span>M</span></p></a>
+                <a href="{{ url_for('index') }}"><p>Nadjib <span>M</span></p></a>
                 <div class="links" id="navLinks">
                     <i class="fas fa-times" onclick="hideMenu()"></i>
                     <ul>
@@ -47,10 +47,10 @@
             <div class="content">
                 <h1>About.</h1>
                 <p></p>My name is Nadjib Mouhoun and I am currently studying Automatique<br><br> This academic year, 2021-2022, I completed my third-year Licence.<br><br>Outside of education, I take a keen interest in technology and programming.</p>
-                <a  class="cv" href="" download><P>Download CV</P></a>
+                <a  class="cv" href="../static/cv/Mouhoun_Nadjib_CV.pdf" download><P>Download CV</P></a>
                 <br>
                 <br>
-                <a href="contact.html" class="btn">EXPLORER NOW</a>
+                <a href="{{ url_for('contact') }}" class="btn">EXPLORER NOW</a>
             </div>
         </div>
     </section>
